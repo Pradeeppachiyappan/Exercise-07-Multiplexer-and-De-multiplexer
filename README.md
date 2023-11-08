@@ -1,9 +1,9 @@
-# Exercise-07-Multiplexer-and-De-multiplexer
-## AIM: 
+# Exercise-07-Multiplexer-and-De-multiplexer :
+## AIM : 
 To implement 4 X1 multiplexer and 1X4 de multiplexer using verilog and validate its outputs
-## HARDWARE REQUIRED:  
+## HARDWARE REQUIRED :  
 PC, Cyclone II , USB flasher
-## SOFTWARE REQUIRED:  
+## SOFTWARE REQUIRED :  
 Quartus prime
 ## THEORY :
 
@@ -33,12 +33,14 @@ If the control input is changed to 11, then all gates are restricted except the 
 De-multiplexer is also a device with one input and multiple output lines. It is used to send a signal to one of the many devices. The main difference between a multiplexer and a de-multiplexer is that a multiplexer takes two or more signals and encodes them on a wire, whereas a de-multiplexer does reverse to what the multiplexer does.
 ![image](https://user-images.githubusercontent.com/36288975/170912606-a30e4b74-1726-4430-b245-2c3c3d9c232d.png)
 Figure 3 De-multiplexer 
+
 1-4 Demultiplexer
 The 1-to-4 demultiplexer comprises 1- input bit, 4-output bits, and control bits. The 1X4 demultiplexer circuit diagram is shown below.![image](https://user-images.githubusercontent.com/36288975/170912683-00fb746a-1d45-4023-91d1-3a70b841073c.png)
 
 ![image](https://user-images.githubusercontent.com/36288975/170912741-7cbd52af-7e0d-4be3-b5c6-6fb9c4eca7c9.png)
 
 Figure4 1X4 De-multiplexer 
+
 The i/p bit is considered as Data D. This data bit is transmitted to the data bit of the o/p lines, which depends on the AB value and the control i/p.
 
 When the control i/p AB = 01, the upper second AND gate is permitted while the remaining AND gates are restricted. Thus, only data bit D is transmitted to the output, and Y1 = Data.
@@ -50,17 +52,17 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
  
 ## Procedure :
-1.Start the module using module projname().
+1. Start the module using module projname().
 
-2.Declare the inputs and outputs along with the select lines according to the multiplexer and demultiplexer.
+2. Declare the inputs and outputs along with the select lines according to the multiplexer and demultiplexer.
 
-3.Use wire to assign intermediate outputs.
+3. Use wire to assign intermediate outputs.
 
-4.Use and, or and not gates to get the desired output.
+4. Use and, or and not gates to get the desired output.
 
-5.End the module.
+5. End the module.
 
-6.Generate RTL realization and timing diagrams.
+6. Generate RTL realization and timing diagrams.
 
 ## PROGRAM : 
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
@@ -97,20 +99,24 @@ and (Y2,I,S0,S1C);
 and (Y3,I,S0,S1);
 endmodule
 ```
-
-## RTL Diagram :
-### Mlutiplexer
-
+## RTL DIAGRAM :
+### Multiplexer
+![image](https://github.com/Pradeeppachiyappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/118707347/b153dbd7-180c-472c-ad88-adb7be6547af)
 ### De-Multiplexer
-
-
-
+![image](https://github.com/Pradeeppachiyappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/118707347/394e4a82-9613-4c29-bbed-879e87def827)
 
 ## TRUTH TABLE : 
+### Multiplexer
+![image](https://github.com/Pradeeppachiyappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/118707347/b9ff0953-6edd-47a4-bdb5-9f12c56bf4b2)
+### De-Multiplexer :
+![image](https://github.com/Pradeeppachiyappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/118707347/c7e3a9f0-f3da-4a44-a581-a591ffa3ea95)
 
+## OUTPUT WAVEFORM :
+### Multiplexer
+![image](https://github.com/Pradeeppachiyappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/118707347/5a4d7ac1-655c-4724-b862-d38f6d334fad)
 
+### De-Mlutiplexer
+![image](https://github.com/Pradeeppachiyappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/118707347/b25fb2c8-ad40-4cd6-9fa9-edaedc93ae73)
 
-
-
-
-### RESULTS 
+### RESULT :
+Hence, 4x1 Multiplexer and 1x4 Demultiplexer is been implemented and verified using verilog programming and its output are validated .
